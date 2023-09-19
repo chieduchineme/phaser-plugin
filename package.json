@@ -1,0 +1,28 @@
+{
+  "name": "phaser-plugin",
+  "version": "2.5.1",
+  "repository": {
+    "type": "git"
+  },
+  "files": [
+    "index.js",
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "keywords": [
+    "phaser",
+    "plugin",
+    "state",
+    "transition"
+  ],
+  "scripts": {
+    "build": "rm -rf dist; microbundle build --output dist --target browser --name StateTransition",
+    "watch": "microbundle watch --output dist --target browser --name StateTransition --entry src/index.js"
+  },
+  "author": "Onyedikachukwu Chiedu",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.4.3"
+  }
+}
